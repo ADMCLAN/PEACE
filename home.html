@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Novel World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0f14;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                        url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 35px;
+            border-radius: 30px;
+            background: #c9a45c;
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e0b76d;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.3rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .novels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .novel-card {
+            background: #1a1a22;
+            border-radius: 15px;
+            padding: 20px;
+            transition: 0.3s ease;
+        }
+
+        .novel-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .novel-card h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 10px;
+        }
+
+        .novel-card p {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        .about {
+            background: #14141c;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        footer {
+            background: #0b0b10;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>My Novel World</h1>
+        <p>
+            A place where emotions breathe, characters live,
+            and stories never end.
+        </p>
+        <a href="#novels" class="btn">Explore Novels</a>
+    </div>
+</header>
+
+<section id="novels">
+
+     <h2 class="section-title">My Novels</h2>
+    
+     <div class="novels">
+        <a href="peace s1.html" class="novel-link">
+            <div class="novel-card">
+                <h3>PEACE SEASON ONE</h3>
+                <p>
+                    A mysterious tale of love, loss, and secrets hidden beneath the school night. 
+                </p>
+            </div>
+        </a>
+ 
+
+        <div class="novel-card">
+            <h3>PEACE SEASON TWO</h3>
+            <p>
+                When time bends, fate rewrites itself in ways no one expects.
+            </p>
+        </div>
+
+        <div class="novel-card">
+            <h3>PEACE SEASON THREE</h3>
+            <p>
+                A journey through pain, hope, and the fragile beauty of human bonds.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <h2 class="section-title">About the Author</h2>
+    <p>
+        I write stories inspired by emotions, dreams, and the silent thoughts
+        we never speak aloud. Each novel is a piece of my soul, crafted for
+        readers who love depth and meaning.
+    </p>
+</section>
+
+<footer>
+    © 2025 My Novel World | All Rights Reserved
+</footer>
+
+</body>
+</html>
